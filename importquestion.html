@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<style> 
+body {
+background-color: #03dcf8;
+}
+h1 {text-align: 
+center;} label {fontsize: 20px;}
+label {font-family: "Times New Roman", Times, 
+serif;} input[type=text], select {
+width: 100%; 
+padding: 12px 
+20px; margin: 20px 
+0; display: inlineblock;
+border: 1px solid rgb(45, 248, 
+18); border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=submit] 
+{ width: 25%;
+background-color: 
+#10be2d; color: rgb(255, 
+255, 255); padding: 14px 
+20px; margin: 20px 
+550px; border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+input[type=submit]:hover { 
+background-color: 
+#0cd2e0;
+}
+div {
+border-radius: 5px; 
+background-color: 
+#03dcf8; padding: 20px;
+}
+</style>
+<body>
+<h1>Question Paper</h1>
+<div>
+<form action="import.php" method="POST">
+<label for="Question_Paper">Subject</label>
+<select id="Subject" name="Question_Paper">
+<option value="null">Select Subject</option>
+<option value="rdbms">RDBMS</option>
+<option value="c_prog">C Program</option>
+<option value="c_plusplus">C++ Program</option>
+<option value="java">JAVA</option>
+</select>
+<label for="sa">Section-A</label>
+<input type="text" id="sa" name="sectiona" placeholder="Enter the 
+Section- A Question...">
+<label for="sb">Section-B</label>
+<input type="text" id="sb" name="sectionb" placeholder="Enter the 
+Section- B Question...">
+<label for="sc">Section-C</label>
+<input type="text" id="sc" name="sectionc" placeholder="Enter the 
+Section- C Question...">
+<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
